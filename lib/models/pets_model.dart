@@ -21,3 +21,11 @@ class PetsModel {
     required this.description,
   });
 }
+
+List<String> categoryList = [
+  'Cats',
+  'Dogs',
+  'Birds',
+  'Snakes',
+  'Other',
+];
