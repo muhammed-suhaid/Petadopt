@@ -14,3 +14,7 @@ Petadopt is a dedicated app for pet lovers, designed to make finding and adoptin
 1. **Home Screen** : Showcases featured pets and pet categories for easy browsing.
 2. **Pet Details Screen** : Displays comprehensive information and images of each pet.
 3. **Cart Screen** : Manage selected pets before completing the adoption process.
+
+### Technology Stack:
+
+- Flutter Framework: Delivers a responsive, visually engaging UI across all platforms.
