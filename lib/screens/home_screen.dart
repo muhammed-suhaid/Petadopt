@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:petadopt/components/my_appbar.dart';
+import 'package:petadopt/components/my_category.dart';
 import 'package:petadopt/components/my_title.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,13 +11,14 @@ class HomeScreen extends StatelessWidget {
     return const Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.all(20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               MyAppbar(),
-              SizedBox(height: 65), 
+              SizedBox(height: 65),
               MyTitle(),
+              MyCategory(),
             ],
           ),
         ),

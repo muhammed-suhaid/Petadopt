@@ -2,6 +2,14 @@ import 'dart:ui';
 
 import 'package:petadopt/models/pets_model.dart';
 
+List category = [
+  "Cats",
+  "Dogs",
+  "Birds",
+  "Snakes",
+  "Other",
+];
+
 List<PetsModel> cats = [
   PetsModel(
     name: 'Mono LaMi',
