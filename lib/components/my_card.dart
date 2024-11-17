@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:petadopt/datas/pets_data.dart';
+import 'package:petadopt/models/pets_model.dart';
 
 class MyCard extends StatefulWidget {
   const MyCard({super.key});
@@ -29,12 +31,14 @@ class _MyCardState extends State<MyCard> {
 
   @override
   Widget build(BuildContext context) {
+    List<PetsModel> catList = cats;
     return SizedBox(
       height: 350,
       child: PageView.builder(
         controller: pageController,
         itemCount: 3,
         itemBuilder: (context, index) {
+          PetsModel cat = catList[index];
           double scale = (_currentPage - index).abs() < 1
               ? 1 - (_currentPage - index).abs() * 0.2
               : 0.8;
@@ -65,7 +69,10 @@ class _MyCardState extends State<MyCard> {
                     children: [
                       SizedBox(
                         height: 250,
-                        child: Center(child: Text("image")),
+                        child: Image.asset(
+                          cat.image,
+                          fit: BoxFit.fitHeight,
+                        ),
                       ),
                     ],
                   ),

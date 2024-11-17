@@ -14,7 +14,7 @@ List<PetsModel> cats = [
   PetsModel(
     name: 'Mono LaMi',
     breed: 'British Shorthair cats',
-    image: 'images/cat3.png',
+    image: 'assets/images/cat3.png',
     age: "1",
     origin: "US",
     sex: "Femail ",
@@ -25,7 +25,7 @@ List<PetsModel> cats = [
   PetsModel(
     name: 'Amila Marko',
     breed: 'LaPerm cats',
-    image: 'images/cat2.png',
+    image: 'assets/images/cat2.png',
     age: "2",
     origin: "US",
     sex: "Femail ",
@@ -36,7 +36,7 @@ List<PetsModel> cats = [
   PetsModel(
     name: 'Yon lee',
     breed: 'Persian cat',
-    image: 'images/cat1.png',
+    image: 'assets/images/cat1.png',
     age: "3 ",
     origin: "Iran",
     sex: "Femail ",
@@ -49,7 +49,7 @@ List<PetsModel> dogs = [
   PetsModel(
     name: 'Max',
     breed: 'Labrador Retriever',
-    image: 'images/dog1.png',
+    image: 'assets/images/dog1.png',
     age: " 1",
     origin: "UK",
     sex: "Dog",
@@ -60,7 +60,7 @@ List<PetsModel> dogs = [
   PetsModel(
     name: 'Bella',
     breed: 'Golden Retriever',
-    image: 'images/dog2.png',
+    image: 'assets/images/dog2.png',
     age: " 2",
     origin: "Italy",
     sex: "Dog",
@@ -71,7 +71,7 @@ List<PetsModel> dogs = [
   PetsModel(
     name: 'Charlie',
     breed: 'German Shepherd',
-    image: 'images/dog3.png',
+    image: 'assets/images/dog3.png',
     age: " 2.5",
     origin: "India",
     sex: "Dog",
@@ -82,7 +82,7 @@ List<PetsModel> dogs = [
   PetsModel(
     name: 'Daisy',
     breed: 'Beagle',
-    image: 'images/dog4.png',
+    image: 'assets/images/dog4.png',
     age: "2.5",
     origin: "India",
     sex: "Dog",
@@ -93,7 +93,7 @@ List<PetsModel> dogs = [
   PetsModel(
     name: 'Luna',
     breed: 'Siberian Husky',
-    image: 'images/dog5.png',
+    image: 'assets/images/dog5.png',
     age: " 2.5",
     origin: "India",
     sex: "Dog",
@@ -106,7 +106,7 @@ List<PetsModel> birds = [
   PetsModel(
     name: 'Charlie',
     breed: 'African Grey Parrot',
-    image: 'images/bird1.png',
+    image: 'assets/images/bird1.png',
     age: " 1",
     origin: "Nepal",
     sex: "bird",
@@ -117,7 +117,7 @@ List<PetsModel> birds = [
   PetsModel(
     name: 'Rio',
     breed: 'Scarlet Macaw',
-    image: 'images/bird2.png',
+    image: 'assets/images/bird2.png',
     age: "1",
     origin: "Fra",
     sex: "Bird",
@@ -128,7 +128,7 @@ List<PetsModel> birds = [
   PetsModel(
     name: 'Sunny',
     breed: 'Cockatiel',
-    image: 'images/bird3.png',
+    image: 'assets/images/bird3.png',
     age: " 1",
     origin: " UK",
     sex: "Bird",
@@ -139,7 +139,7 @@ List<PetsModel> birds = [
   PetsModel(
     name: 'Blue',
     breed: 'Gold Macaw',
-    image: 'images/bird4.png',
+    image: 'assets/images/bird4.png',
     age: " 2",
     origin: "NZ",
     sex: "bird",
