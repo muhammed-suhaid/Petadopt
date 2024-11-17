@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:petadopt/components/my_appbar.dart';
+import 'package:petadopt/components/my_card.dart';
 import 'package:petadopt/components/my_category.dart';
 import 'package:petadopt/components/my_title.dart';
 
@@ -16,9 +17,11 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               MyAppbar(),
-              SizedBox(height: 65),
+              SizedBox(height: 50),
               MyTitle(),
               MyCategory(),
+              SizedBox(height: 15),
+              MyCard(),
             ],
           ),
         ),
