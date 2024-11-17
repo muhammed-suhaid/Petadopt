@@ -37,13 +37,13 @@ class _MyCategoryState extends State<MyCategory> {
                 ),
                 decoration: BoxDecoration(
                   color: index == currentIndex
-                      ? Colors.amber[800] 
+                      ? Colors.amber[800]
                       : Colors.amber[50],
                   borderRadius: BorderRadius.circular(8),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.amber.withOpacity(0.4),
-                      spreadRadius: 3,
+                      spreadRadius: 1,
                       blurRadius: 5,
                       offset: const Offset(0, 0),
                     ),
