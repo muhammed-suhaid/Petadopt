@@ -18,6 +18,7 @@ class _MyCategoryState extends State<MyCategory> {
         height: 100,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
+          physics: const BouncingScrollPhysics(),
           itemCount: category.length,
           itemBuilder: (context, index) {
             return InkWell(
