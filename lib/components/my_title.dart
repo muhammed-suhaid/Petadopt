@@ -5,25 +5,28 @@ class MyTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          "Adopt",
-          style: TextStyle(
-            fontSize: 36,
-            fontWeight: FontWeight.w500,
-            color: Colors.white,
+    return const Padding(
+      padding: EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            "Adopt",
+            style: TextStyle(
+              fontSize: 36,
+              fontWeight: FontWeight.w500,
+              color: Colors.white,
+            ),
           ),
-        ),
-        Text(
-          "your pet's here!",
-          style: TextStyle(
-            fontSize: 36,
-            fontWeight: FontWeight.w300,
+          Text(
+            "your pet's here!",
+            style: TextStyle(
+              fontSize: 36,
+              fontWeight: FontWeight.w300,
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

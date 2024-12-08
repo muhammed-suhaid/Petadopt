@@ -23,22 +23,21 @@ class HomeScreen extends StatelessWidget {
                 width: double.infinity,
                 clipBehavior: Clip.antiAliasWithSaveLayer,
                 margin: const EdgeInsets.only(top: 20),
-                decoration: const BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.vertical(top: Radius.circular(40)),
+                decoration: BoxDecoration(
+                  color: Colors.grey.withOpacity(0.3),
+                  borderRadius: const BorderRadius.vertical(
+                    top: Radius.circular(40),
+                  ),
                 ),
                 child: const SingleChildScrollView(
-                  child: Padding(
-                    padding: EdgeInsets.all(20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        MyTitle(),
-                        //MyCategory(),
-                        //   const SizedBox(height: 15),
-                        //   const MyCard(),
-                      ],
-                    ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      MyTitle(),
+                      MyCategory(),
+                      //   const SizedBox(height: 15),
+                      //   const MyCard(),
+                    ],
                   ),
                 ),
               ),
