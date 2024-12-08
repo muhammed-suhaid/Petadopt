@@ -13,11 +13,11 @@ List category = [
 List<PetsModel> cats = [
   PetsModel(
     name: 'Mono LaMi',
-    breed: 'British Shorthair', 
+    breed: 'British Shorthair cat', 
     image: 'assets/images/cat3.png',
     age: "1",
     origin: "US",
-    sex: "Femail ",
+    sex: "Female", 
     color: const Color(0xffC1B7B1),
     description:
         "Pets bring joy, companionship, and love into our lives. Whether furry, feathered, or scaled, they offer comfort and loyalty. From playful antics to gentle purrs, they teach us patience and responsibility.",
@@ -28,8 +28,8 @@ List<PetsModel> cats = [
     image: 'assets/images/cat2.png',
     age: "2",
     origin: "US",
-    sex: "Femail ",
-    color: const Color(0xffD7BF9D),
+    sex: "Male",
+    color: const Color(0xffD7BF9D), 
     description:
         "Pets bring joy, companionship, and love into our lives. Whether furry, feathered, or scaled, they offer comfort and loyalty. From playful antics to gentle purrs, they teach us patience and responsibility.",
   ),
@@ -39,7 +39,7 @@ List<PetsModel> cats = [
     image: 'assets/images/cat1.png',
     age: "3 ",
     origin: "Iran",
-    sex: "Femail ",
+    sex: "Female",
     color: const Color(0xffB1D1FF),
     description:
         "Pets bring joy, companionship, and love into our lives. Whether furry, feathered, or scaled, they offer comfort and loyalty. From playful antics to gentle purrs, they teach us patience and responsibility.",

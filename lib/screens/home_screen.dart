@@ -35,8 +35,8 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       MyTitle(),
                       MyCategory(),
-                      //   const SizedBox(height: 15),
-                      //   const MyCard(),
+                      SizedBox(height: 15),
+                      MyCard(),
                     ],
                   ),
                 ),
