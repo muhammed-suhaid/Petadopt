@@ -37,7 +37,7 @@ class PetDetailsScreen extends StatelessWidget {
                     alignment: Alignment.center,
                     child: Image.asset(
                       pet.image,
-                      fit: BoxFit.cover,
+                      fit: BoxFit.fill,
                     ),
                   ),
                 ),
@@ -154,7 +154,8 @@ class PetDetailsScreen extends StatelessWidget {
                         shadowColor: pet.color,
                         padding: const EdgeInsets.symmetric(vertical: 15),
                         shape: const RoundedRectangleBorder(
-                            borderRadius: BorderRadius.all(Radius.circular(10)))),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(10)))),
                     child: const Icon(
                       Icons.favorite_border_outlined,
                       color: Colors.white,

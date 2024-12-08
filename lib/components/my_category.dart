@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:petadopt/datas/pets_data.dart';
+import 'package:petadopt/models/pets_model.dart';
 
 class MyCategory extends StatefulWidget {
-  const MyCategory({super.key});
+  const MyCategory({
+    super.key,
+    required this.onCategorySelected,
+  });
+  final Function(String selectedCategory) onCategorySelected;
 
   @override
   State<MyCategory> createState() => _MyCategoryState();
@@ -27,6 +32,7 @@ class _MyCategoryState extends State<MyCategory> {
                 setState(() {
                   currentIndex = index;
                 });
+                widget.onCategorySelected(categoryList[index]);
               },
               child: Align(
                 alignment: Alignment.center,

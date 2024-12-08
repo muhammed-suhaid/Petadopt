@@ -4,8 +4,21 @@ import 'package:petadopt/components/my_card.dart';
 import 'package:petadopt/components/my_category.dart';
 import 'package:petadopt/components/my_title.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  String selectedCategory = 'Cats';
+
+  void handleCategorySelection(String selectedCategory) {
+    setState(() {
+      this.selectedCategory = selectedCategory;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,15 +42,15 @@ class HomeScreen extends StatelessWidget {
                     top: Radius.circular(40),
                   ),
                 ),
-                child: const SingleChildScrollView(
-                  physics: BouncingScrollPhysics(),
+                child: SingleChildScrollView(
+                  physics: const BouncingScrollPhysics(),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      MyTitle(),
-                      MyCategory(),
-                      SizedBox(height: 15),
-                      MyCard(),
+                      const MyTitle(),
+                      MyCategory(onCategorySelected: handleCategorySelection),
+                      const SizedBox(height: 15),
+                      MyCard(selectedCategory: selectedCategory),
                     ],
                   ),
                 ),
