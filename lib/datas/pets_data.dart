@@ -13,7 +13,7 @@ List category = [
 List<PetsModel> cats = [
   PetsModel(
     name: 'Mono LaMi',
-    breed: 'British Shorthair cats',
+    breed: 'British Shorthair', 
     image: 'assets/images/cat3.png',
     age: "1",
     origin: "US",

@@ -9,21 +9,41 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.all(20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              MyAppbar(),
-              SizedBox(height: 50),
-              MyTitle(),
-              MyCategory(),
-              SizedBox(height: 15),
-              MyCard(),
-            ],
-          ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(20),
+              child: MyAppbar(),
+            ),
+            Expanded(
+              child: Container(
+                width: double.infinity,
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                margin: const EdgeInsets.only(top: 20),
+                decoration: const BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.vertical(top: Radius.circular(40)),
+                ),
+                child: const SingleChildScrollView(
+                  child: Padding(
+                    padding: EdgeInsets.all(20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        MyTitle(),
+                        //MyCategory(),
+                        //   const SizedBox(height: 15),
+                        //   const MyCard(),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

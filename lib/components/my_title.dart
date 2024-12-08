@@ -13,6 +13,7 @@ class MyTitle extends StatelessWidget {
           style: TextStyle(
             fontSize: 36,
             fontWeight: FontWeight.w500,
+            color: Colors.white,
           ),
         ),
         Text(
