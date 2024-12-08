@@ -79,7 +79,7 @@ class _MyCardState extends State<MyCard> {
                                       ? Icons.male
                                       : Icons.female,
                                   color: Colors.grey,
-                                )
+                                ),
                               ],
                             ),
                             Text(
