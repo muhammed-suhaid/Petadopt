@@ -9,9 +9,13 @@ class MyAppbar extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 25,
+          backgroundColor: Colors.grey,
           child: Text(
             "A",
-            style: TextStyle(fontSize: 22),
+            style: TextStyle(
+              fontSize: 22,
+              color: Colors.white,
+            ),
           ),
         ),
         SizedBox(width: 10),
@@ -22,6 +26,12 @@ class MyAppbar extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
+        Spacer(),
+        Icon(
+          Icons.menu_rounded,
+          size: 35,
+          color: Colors.grey,
+        )
       ],
     );
   }
